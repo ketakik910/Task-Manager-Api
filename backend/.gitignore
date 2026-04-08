@@ -1,4 +1,37 @@
-backend/
-*.log
+# Node dependencies
 node_modules/
+
+# Environment variables (DO NOT COMMIT THESE)
 .env
+.env.*
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output (if using TypeScript or bundlers)
+dist/
+build/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor folders
+.vscode/
+.idea/
+
+# Coverage (testing)
+coverage/
+
+# Optional: backend-specific ignores
+backend/node_modules/
+backend/.env
