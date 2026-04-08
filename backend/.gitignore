@@ -35,3 +35,5 @@ coverage/
 # Optional: backend-specific ignores
 backend/node_modules/
 backend/.env
+
+./a.txt
