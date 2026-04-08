@@ -26,6 +26,10 @@ app.get("/", (req, res) => {
   return res.send("API is running...");
 });
 
+app.get("/test-auth", (req, res) => {
+  res.send("Auth route working");
+});
+
 const PORT = process.env.PORT || 8000;
 
 const startServer = async () => {
