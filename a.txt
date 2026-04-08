@@ -1,0 +1,7 @@
+👉 Controller should NOT:
+
+talk to DB directly ❌
+contain heavy logic ❌
+
+controller : handles res and req 
+service will handle all bussiness logics (db, rules and etc)
