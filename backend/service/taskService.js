@@ -3,9 +3,9 @@ const Task = require("../models/taskModel");
 
 async function createTaskService(userId, taskData) {
   const { title, description } = taskData;
-    if (!title || !description) {
-      throw new Error("Title and description are required");
-    }
+    // if (!title || !description) {
+    //   throw new Error("Title and description are required");
+    // }
     const newTask = await Task.create({
       title,
       description,
@@ -79,9 +79,9 @@ async function getTasksByIdService(userId, taskId) {
 
 async function updateTaskService(userId, taskId, taskData) {
   const { title, description } = taskData;
-      if (!title || !description) {
-        throw new Error("Title and description are required");
-      }
+      // if (!title || !description) {
+      //   throw new Error("Title and description are required");
+      // }
       const task = await Task.findOneAndUpdate(
         { _id: taskId, user: userId }, // query
         { title, description }, // update

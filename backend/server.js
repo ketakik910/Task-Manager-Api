@@ -18,8 +18,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/auth",authRoutes);
 app.use("/api/tasks",taskRoutes);
 
-
-
 app.use(errorHandler);
 
 app.get("/", (req, res) => {
