@@ -36,4 +36,4 @@ coverage/
 backend/node_modules/
 backend/.env
 
-./a.txt
+../a.txt
